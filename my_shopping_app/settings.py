@@ -30,7 +30,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-henrybennet-myshoppinga-h66pwly9y23.ws.codeinstitute-ide.net','.herokuapp.com',]
 
@@ -140,8 +140,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CRSF_TRUSTED_ORIGINS = [
+CSRF_TRUSTED_ORIGINS = [
     "https://*.codeinstitute-ide.net",
     "https://*.herokuapp.com",
-    "8000-henrybennet-myshoppinga-h66pwly9y23.ws.codeinstitute-ide.net",
+    'https://8000-henrybennet-myshoppinga-h66pwly9y23.ws.codeinstitute-ide.net',
 ]
