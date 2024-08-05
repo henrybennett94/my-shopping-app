@@ -11,7 +11,7 @@ class CustomUserCreationForm:
 class ListForm(ModelForm):
     class Meta:
         model = List
-        fields = 'list_name'
+        fields = ('list_name',)
 
 class AddItemForm(ModelForm):
     class Meta:

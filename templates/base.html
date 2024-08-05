@@ -1,0 +1,32 @@
+{% load static %}
+
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Shopping App{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>My Shopping App</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'list_view' %}">Home</a></li>
+                <li><a href="{% url 'create_shopping_list' %}">Create List</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %}
+        <!-- Content from other templates will be inserted here -->
+        {% endblock %}
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 My Shopping App</p>
+    </footer>
+</body>
+</html>
