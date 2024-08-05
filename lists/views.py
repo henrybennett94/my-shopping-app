@@ -32,6 +32,11 @@ def create_shopping_list(request):
             'list_form': list_form
         })
 
+@login_required
+def list_view(request):
+    lists = List.objects.all()
+    return render(request, 'lists/my_lists.html', {'lists': lists})
+
 @login_required(login_url='/login/')
 def open_shopping_list(request, id):
     shopping_list = get_object_or404(List, id=id)
