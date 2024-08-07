@@ -6,7 +6,9 @@
 <h1>Create a New Shopping List</h1>
 <form method="post">
     {% csrf_token %}
-    {{ form.as_p }}  <!-- Render form fields as paragraphs -->
+    {{ list_form.as_p }}  
+    <h2>Add an Item</h2>
+    {{ add_item_form.as_p }}
     <button type="submit">Create List</button>
 </form>
 {% endblock %}

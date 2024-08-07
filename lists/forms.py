@@ -1,19 +1,21 @@
 from django.forms import ModelForm
-from lists.models import List, Items
+from lists.models import List, Items, ShoppingList
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 
 class CustomUserCreationForm:
     class Meta:
         model = User
-        fields = ['username', 'password1', 'password2']
+        fields = ('username', 'password1', 'password2',)
 
 class ListForm(ModelForm):
     class Meta:
-        model = List
-        fields = ('list_name',)
+        model = ShoppingList
+        fields = "__all__"
 
+"""
 class AddItemForm(ModelForm):
     class Meta:
         model = Items
-        fields = ['label', 'quantity']
+        fields = ('label', 'quantity',)
+"""
