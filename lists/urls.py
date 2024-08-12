@@ -15,6 +15,7 @@ urlpatterns = [
 
 
 
+
  
     #path('add_item/<int:shopping_list_id>/', add_item, name='add_item'),
     #path('create/', create_and_add_item, name='create_and_add_item'),
