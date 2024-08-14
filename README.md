@@ -1,3 +1,11 @@
+# My Shopping App
+
+Deployment link: (https://my-shopping-app-969a4f2310f4.herokuapp.com/)
+
+Github Repository: (https://github.com/henrybennett94/my-shopping-app)
+
+Welcome to My Shopping App. An application to allow users a quick and easy space to make and store their shopping lists. Keep all your shopping lists in one place and access them as and when you need!
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -45,7 +53,7 @@ The MVP provides users with a handy application they can quickly sign up with, a
 - As a site user I can create a user account with a username and password so that access  to how I use the site is private to me and protected.
 - As a site user I can access my user account  through a login form requiring a password so that my account's security is maintained.
 - As a site user I can check off items from the list once selected to purchase so that I can keep track of my shopping while I am doing it.
-- As a site user I can have the option to delete lists, and items individually from lists, that I no ,onger need to be there so that I can keep my user space organised and easy to manage.
+- As a site user I can have the option to delete lists, and items individually from lists, that I no longer need to be there so that I can keep my user space organised and easy to manage.
 - As a site user I can get asked to confirm that I wish to delete a feature, after selecting a delete option so that the risk of accidentally deleting something is minimised.
 
 ------
@@ -102,3 +110,5 @@ This application is not functional currently. The main issues are with url confi
 - With the database issues, running the application in the browser returned this error:![Screenshot 2024-08-06 at 12 47 24](https://github.com/user-attachments/assets/15d295a9-9b7d-4af6-b2a7-7822c5e1527f)- Attempts to resolve this error included changing url paths, which have not been reset to date. There have also been problems with the views.py and forms.py files running that are associated with the database errors.
 - I have been at a loss for how to fix this, which became the main focus of my development and did not leave enough time to get any further than the stage of database and model configuration. If there were to be another attempt to work on this project, a possible solution that wasn't tried would be to use a new database entirely.
 
+---
+## Credits
