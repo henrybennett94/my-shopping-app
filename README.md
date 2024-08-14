@@ -3,10 +3,9 @@
 - [Introduction](#introduction)
 - [UX Design](#ux-deisgn)
 - [Development](#development)
-- [Project Structure](#project-structure)
 - [Technology Used](#technology-used)
 - [Deployment](#deployment)
-- [Bugs](#bugs)
+- [Issues](#issues)
 - [Credits](#credits) 
 
 ## Introduction
@@ -78,5 +77,20 @@ Cloudinary is a cloud-based service that provides powerful tools for managing, o
   - Navigate to the "Manual deploy" section, ensure the main branch is selected for deployment, and then select "Deploy"
   - Wait for the app to build in Heroku
   - Select "View" on completion of build
-  - The deployed link can be found at:  
-  
+  - The deployed link can be found at:  [
+](https://my-shopping-app-969a4f2310f4.herokuapp.com/)
+
+-----
+## Issues
+
+This application is not functional currently. The main issues are with url configuration, meaning the application cannot be run in the browser at all, and database configuration which has completely impeded the development of CRUD functionality. Unfortunately, neither of these fundamental issues have been resolved to date.
+
+###  Database Configuration Issues
+
+- Early in development, erroneous data was submitted to a field of the database, incompatible with the data type specified for that field in the associated data model.
+- This stalled all further migrations and obstructed submission of data through forms in the running application.
+- Attempts to undo the error were not successful. The database was reset, an attempt to build a new model was made, the migrations files were manually altered to try and reconfigure the operations and were eventually reset as well when this didn't work.
+- With the database issues, running the application in the browser returned this error:
+- Attempts to resolve this error included changing url paths, which have not been reset to date. There have also been problems with the views.py and forms.py files running that are associated with the database errors.
+- I have been at a loss for how to fix this, which became the main focus of my development and did not leave enough time to get any further than the stage of database and model configuration. If there were to be another attempt to work on this project, a possible solution that wasn't tried would be to use a new database entirely.
+
