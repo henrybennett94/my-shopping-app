@@ -7,8 +7,6 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 
-# Create your views here.
-
 class HomePage(TemplateView):
     """Displays home page """
     template_name = 'index.html'
@@ -49,15 +47,15 @@ def open_shopping_list(request, id):
     """
     shopping_list = get_object_or404(List, id=id)
     items = shopping_list.items.all()
-  #  return render(request, "lists/templates/lists/shopping_list.html",{"list": list},)
+
     return render(request, 'list_detail.html', {'shopping_list': shopping_list, 'items': items})
 
 """
 #@login_required(login_url='/login/')
 #def add_item(request):
-"""
+
 #Add an item to the shopping list
-"""
+
     shopping_list = get_object_or_404(List, id=shopping_list_id)
 
     if request.method == 'POST':
